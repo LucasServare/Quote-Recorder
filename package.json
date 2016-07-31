@@ -1,0 +1,25 @@
+{
+  "name": "QuoteRecorder",
+  "version": "1.0.0",
+  "description": "",
+  "main": "app.js",
+  "scripts": {
+    "start": "node app.js",
+    "autorerun": "nodemon app.js"
+  },
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "body-parser": "^1.15.2",
+    "dotenv": "^2.0.0",
+    "ejs": "^2.5.1",
+    "express": "^4.14.0",
+    "mongodb": "^2.2.5"
+  },
+  "devDependencies": {
+    "nodemon": "^1.10.0"
+  },
+  "engines": {
+    "node": "4.4.7"
+  }
+}

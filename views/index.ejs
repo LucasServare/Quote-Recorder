@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Quote Recorder</title>
+  <!-- Use Skeleton as our CSS framework. -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/skeleton/2.0.4/skeleton.css">
+  <!-- Our personal CSS. -->
+  <link rel='stylesheet' href='/stylesheets/styling.css'>
+</head>
+<body>
+
+<div class="container">
+  <div class="row">
+      <h1 class="text-center">Quotes</h1>
+        <ul class="quotes">
+        <% for(var i=0; i<quotes.length; i++) {%>
+          <li class="quote">
+            <span><%= quotes[i].quote %></span>
+            <br>-<span><%= quotes[i].name %></span>
+          </li>
+        <% } %>
+        </ul>
+  </div>
+
+<h1>Want to add your own?</h1>
+  <form action="/quotes" method="POST">
+    <input type="text" class="u-full-width" placeholder="Your Name" name="name">
+    <textarea class="u-full-width" placeholder="Your Quote" name="quote"></textarea>
+    <button class="button-primary" type="submit">Submit</button>
+  </form>
+</div>
+</body>
+</html>
